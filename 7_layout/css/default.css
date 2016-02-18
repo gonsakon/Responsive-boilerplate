@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+html {
+}
+/* CSS Style */
+.wrap {
+	width: 1003px;
+	margin: 0 auto;
+	position:relative;
+}
+.header{
+	height: 350px;
+}
+h1{ position:absolute;
+    top:30px;
+    left:0px;
+
+
+}
+h1 a{
+	display:block;
+	width:250px;
+	text-indent:-9999px;
+	height:250px;
+	background:url(../images/M1.png)
+}
+.nav{
+	float:right;
+	margin:30px 0 0 0;
+}
+li{
+	float:left;
+	background:#3399FF;
+	border-right:1px solid #fff;
+}
+a{
+	color:#fff;
+	display:block;
+	width:100px;
+	font-weight:bold;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;;
+}
+.content{
+	float: left;
+	width: 650px;
+	border:2px solid #000;
+	padding: 10px
+}
+.content h2{
+	font-weight: bold;
+	font-size: 26px;
+	padding: 30px 0 20px 0;
+}
+.content p{
+	line-height: 1.8;
+	letter-spacing: 1pt;
+	padding: 0 0 30px 0;
+}
+.sidebar{
+	float: right;
+	width: 310px;
+	border:2px solid #000;
+	padding: 5px
+}
+.sidebar img{
+	margin:0 0 10px 0;
+}
+
+ @media only screen and (max-width: 767px) {
+.wrap{
+	width:100%;
+	margin:0px 0 0 0;
+}
+.header{
+	height: auto;
+}
+h1{
+	position:relative;/* 絕對定位改成相對定位 */
+	margin:0 auto;
+	width:150px;
+}
+h1 a{
+	display:block;
+	width:150px;
+	height:170px;
+	background:url(../images/M2.png) no-repeat
+}	
+.nav{
+	float:none;/* 拿掉浮動 */
+} 
+
+li {
+	width:90%;
+	float:none; /* float style */
+	margin:0 auto 10px auto;	
+	border-radius:3px;
+}
+a{
+	width:100%;
+	text-align:center;
+}
+.content,.sidebar{
+	border:none;
+	float: none; /* 拿掉浮動 */
+	width: 100%; /* 百分比呈現寬度 */
+	
+}
+.content p{
+	padding:0 10px 30px 0px
+}
+.content h2{
+	padding:10px 10px 10px 0;
+}
+.sidebar{
+	text-align: center;
+}
+
+.sidebar img{
+	max-width:90%;/* 圖片改為百分比縮放 */
+	height:auto;
+	margin:0 0 10px 0;
+}
+}

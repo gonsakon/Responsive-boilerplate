@@ -1,0 +1,3 @@
+1.RWD的變化關鍵請瀏覽css/default.css檔案的註解
+2.float:none與width:100%的設定可將div變回初始設定(無float)
+3.當div沒有要併排時，請再插入個div,含有clear:both屬性來清除float的浮動，可以試著將第52的div拿掉看出現什麼結果→ <div class="clear"></div>
